@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Robot : MonoBehaviour
+public class Robot : Unit 
 {
 
   // Parameters
@@ -13,6 +13,12 @@ public class Robot : MonoBehaviour
   private void Awake()
   {
     agent = GetComponent<NavMeshAgent>();
+
+    if (target == null)
+    {
+    target = GameObject.FindGameObjectWithTag("Player").transform; // Assuming the player has the tag "Player"
+      
+    }
   }
 
   // Start is called once before the first execution of Update after the MonoBehaviour is created
