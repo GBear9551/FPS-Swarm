@@ -44,10 +44,19 @@
                 {
                     "name": "Shoot",
                     "type": "Button",
-                    "id": "0385d717-b18e-4440-82a6-74ef4e03c78d",
+                    "id": "d0eba785-a851-4af5-8c16-2c73fd466c45",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Zoom",
+                    "type": "Button",
+                    "id": "c26164a8-7947-42c1-9a98-5bb7008e7a17",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 }
             ],
@@ -230,7 +239,18 @@
                 },
                 {
                     "name": "",
-                    "id": "93739dae-bbfd-4d3c-a44d-41f9daf009a0",
+                    "id": "9117b03f-6bde-4fc1-a69c-53d35898aa89",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "29d0b4f3-b1dc-47d8-b9a6-431968859a3d",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
@@ -241,12 +261,23 @@
                 },
                 {
                     "name": "",
-                    "id": "121a96d2-d3de-463e-bad0-1d2b8612867a",
-                    "path": "<Gamepad>/rightTrigger",
+                    "id": "89294da7-838f-410e-a915-c5a7b980550b",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Shoot",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "14c28366-f769-4c9c-a6c5-c2f26a5156ff",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

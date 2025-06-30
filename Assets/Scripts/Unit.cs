@@ -10,7 +10,7 @@ public class Unit : MonoBehaviour
     [SerializeField] private float unitSpeed = 5f; // Default speed for the unit
     [SerializeField] private ParticleSystem onDeathVFX; // Particle effect to play on death
     [SerializeField] private AudioSource onDeathSFX; // Sound to play on death
-
+    [SerializeField] public GameObject onHitVFX; // Particle effect to play on hit
 
   private void Start()
   {
